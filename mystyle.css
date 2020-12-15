@@ -1,0 +1,41 @@
+.reporte {
+    margin-left: 0px;
+}
+table {
+    text-align: center;
+}
+.botones {
+    margin-left: 50px;
+    width: 50%;
+}
+h1 {
+    text-align: center;
+    width: 100%;
+}
+.tick > line {
+    stroke: #b0b0b0;
+}
+.contenedor {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+    /*margin-top: 80px;*/
+}
+fila {
+    display: flex;
+    margin-bottom: 25px;
+}
+.rect_1_0 {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.rect_1_1 {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.seccion-final {
+    /*background: black;*/
+    color: white;
+    /*padding: 300px 100px;*/
+    text-align: center;
+}
