@@ -1,6 +1,5 @@
 function ejecuta_grafico(rango) {
-    // d3.json('http://localhost:3000/api/v1/employees/edad/' + rango)
-    d3.csv('data/edad_' + rango + '.csv')
+    d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/edad_' + rango + '.csv')
         .then(function (d) {
             v_barras(d);
         });
@@ -253,7 +252,7 @@ function v_barras(aux) {
     d3.select('#select_rango').on('change', function () {
         const rango = d3.select(this).property('value');
         // d3.json('http://localhost:3000/api/v1/employees/Edad/' + rango)
-        d3.csv('data/edad_' + rango + '.csv')
+        d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/edad_' + rango + '.csv')
             .then(function (d) {
                 update_grafico(d);
             });

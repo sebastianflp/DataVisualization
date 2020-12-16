@@ -1,5 +1,4 @@
-// d3.json('http://localhost:3000/api/v1/employees/genero/')
-d3.csv('data/genero_1.csv')
+d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/genero_1.csv')
     .then(function (d) {
         // console.log(d);
         v_gender(d);
@@ -29,14 +28,14 @@ function v_gender(aux) {
         if (i === 0) {
             i = 1;
             // d3.json('http://localhost:3000/api/v1/employees/genero_raza/White')
-            d3.csv('data/genero_2.csv')
+            d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/genero_2.csv')
                 .then(function (d) {
                     var data2 = d.slice(0, 2);
                     // var data2 = d.resultados.slice(0, 2);
                     var n_white = parseInt(data2[0].n) + parseInt(data2[1].n);
 
                     // d3.json('http://localhost:3000/api/v1/employees/genero_raza/Black')
-                    d3.csv('data/genero_3.csv')
+                    d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/genero_3.csv')
                         .then(function (d) {
                             // var data3 = d.resultados.slice(0, 2);
                             var data3 = d.slice(0, 2);

@@ -1,5 +1,5 @@
 // d3.json('http://localhost:3000/api/v1/employees/linea_de_tiempo')
-d3.csv('data/tiempo_1.csv')
+d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/tiempo_1.csv')
     .then(function (d) {
         // time_line(d.resultados);
         time_line(d);

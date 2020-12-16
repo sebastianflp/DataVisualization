@@ -1,5 +1,5 @@
 // d3.json('http://localhost:3000/api/v1/employees/vc_pk_rate_city/poli_kill_total')
-d3.csv('data/ratios_poli_kill_total.csv')
+d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/ratios_poli_kill_total.csv')
     .then(function (d) {
         // view_ratios(d.resultados);
         view_ratios(d);
@@ -512,7 +512,7 @@ function view_ratios(data) {
             d3.select('#select_raza').on('change', function () {
                 const raza = d3.select(this).property('value');
                 // d3.json('http://localhost:3000/api/v1/employees/vc_pk_rate_city/' + raza)
-                d3.csv('data/ratios_' + raza + '.csv')
+                d3.csv('https://raw.githubusercontent.com/sebastianflp/DataVisualization/main/ratios_' + raza + '.csv')
                     .then(function (d) {
                         // update_grafico_ratios(d.resultados, raza);
                         update_grafico_ratios(d, raza);
